@@ -24,3 +24,8 @@ runs:
     command: /usr/bin/gpg
     memory: 32
     networking: False
+  - name: busybox
+    rootfs: ../dynamic-apps/busybox
+    command: /bin/busybox sh
+    memory: 64
+    networking: True
