@@ -14,3 +14,13 @@ runs:
     command: /usr/bin/sqlite3 
     memory: 64
     networking: False
+  - name: node
+    rootfs: ../dynamic-apps/node
+    command: /bin/node
+    memory: 512
+    networking: True
+  - name: gnupg
+    rootfs: ../dynamic-apps/gnupg
+    command: /usr/bin/gpg
+    memory: 32
+    networking: False
