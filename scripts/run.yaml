@@ -29,3 +29,8 @@ runs:
     command: /bin/busybox sh
     memory: 64
     networking: True
+  - name: ffmpeg
+    rootfs: ../dynamic-apps/ffmpeg
+    command: /usr/bin/ffmpeg
+    memory: 256
+    networking: False
